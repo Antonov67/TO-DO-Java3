@@ -17,6 +17,7 @@ public class TodoService {
                 .baseUrl(BASE_URl)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
+        api = retrofit.create(API.class);
     }
 
     public void getTodos(SimpleCallback<ResponseTodo> callback) {
