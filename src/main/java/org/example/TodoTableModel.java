@@ -41,4 +41,8 @@ public class TodoTableModel extends AbstractTableModel {
         this.todoList.addAll(todoList);
         fireTableDataChanged();
     }
+
+    public Todo getTodoAt(int row){
+        return todoList.get(row);
+    }
 }
